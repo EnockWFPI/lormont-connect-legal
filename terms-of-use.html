@@ -1,40 +1,251 @@
 <!DOCTYPE html>
-
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title>Conditions d’utilisation — Lormont Connect</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conditions d’utilisation | Lormont Connect</title>
+
+  <style>
+    :root {
+      --bg: #f4f7f5;
+      --card: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --primary: #15803d;
+      --primary-dark: #166534;
+      --border: #e5e7eb;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+      --radius: 18px;
+      --max-width: 920px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(180deg, #eef7f0 0%, var(--bg) 100%);
+      color: var(--text);
+      line-height: 1.75;
+    }
+
+    .wrapper {
+      min-height: 100vh;
+      padding: 40px 20px 60px;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .hero {
+      padding: 48px 32px 32px;
+      background: linear-gradient(135deg, #15803d 0%, #22c55e 100%);
+      color: #fff;
+    }
+
+    .top-link {
+      display: inline-block;
+      margin-bottom: 16px;
+      color: rgba(255,255,255,0.92);
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .top-link:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 36px;
+      line-height: 1.15;
+    }
+
+    .subtitle {
+      margin: 0;
+      font-size: 16px;
+      color: rgba(255,255,255,0.92);
+    }
+
+    .content {
+      padding: 32px;
+    }
+
+    h2 {
+      margin: 28px 0 10px;
+      font-size: 22px;
+      color: var(--primary-dark);
+    }
+
+    h2:first-of-type {
+      margin-top: 0;
+    }
+
+    p {
+      margin: 0 0 16px;
+    }
+
+    ul {
+      margin: 0 0 18px;
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .highlight {
+      padding: 18px 20px;
+      border: 1px solid #dcfce7;
+      background: #f0fdf4;
+      border-radius: 14px;
+      margin-bottom: 28px;
+    }
+
+    .footer {
+      padding: 24px 32px 30px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    a {
+      color: var(--primary-dark);
+    }
+
+    @media (max-width: 640px) {
+      .hero {
+        padding: 38px 22px 26px;
+      }
+
+      .content,
+      .footer {
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+    }
+  </style>
 </head>
+
 <body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="card">
 
-<h1>Conditions d’utilisation</h1>
+        <section class="hero">
+          <a class="top-link" href="index.html">← Retour à l’accueil</a>
+          <h1>Conditions d’utilisation</h1>
+          <p class="subtitle">Dernière mise à jour : Avril 2026</p>
+        </section>
 
-<p>Dernière mise à jour : 2026</p>
+        <section class="content">
 
-<h2>1. Objet</h2>
-<p>L’application permet de signaler des incidents et consulter des informations locales.</p>
+          <div class="highlight">
+            En utilisant Lormont Connect, vous acceptez les présentes conditions
+            d’utilisation. Elles encadrent l’accès à l’application et l’usage de ses services.
+          </div>
 
-<h2>2. Utilisation</h2>
-<p>L’utilisateur s’engage à :</p>
-<ul>
-<li>Fournir des informations exactes</li>
-<li>Ne pas publier de contenu illégal</li>
-</ul>
+          <h2>1. Objet</h2>
+          <p>
+            Lormont Connect est une application locale et communautaire permettant
+            notamment de consulter des alertes locales, signaler des incidents,
+            explorer la carte et accéder à des informations utiles pour les habitants.
+          </p>
 
-<h2>3. Responsabilité</h2>
-<p>Lormont Connect ne garantit pas l’exactitude des informations publiées.</p>
+          <h2>2. Acceptation des conditions</h2>
+          <p>
+            En accédant à l’application ou en l’utilisant, vous reconnaissez avoir lu,
+            compris et accepté les présentes conditions d’utilisation.
+          </p>
 
-<h2>4. Compte utilisateur</h2>
-<p>L’utilisateur est responsable de son compte.</p>
+          <h2>3. Accès au service</h2>
+          <p>
+            L’accès à certaines fonctionnalités peut nécessiter la création d’un compte.
+            Vous êtes responsable des informations fournies lors de votre inscription et
+            de la confidentialité de vos identifiants.
+          </p>
 
-<h2>5. Suspension</h2>
-<p>Nous pouvons suspendre un compte en cas d’abus.</p>
+          <h2>4. Règles d’utilisation</h2>
+          <p>Vous vous engagez à utiliser l’application de manière responsable et licite. À ce titre, vous vous interdisez notamment de :</p>
+          <ul>
+            <li>Publier des informations fausses, trompeuses ou malveillantes</li>
+            <li>Partager des contenus injurieux, violents, discriminatoires ou illégaux</li>
+            <li>Porter atteinte à la sécurité ou au bon fonctionnement de l’application</li>
+            <li>Usurper l’identité d’une autre personne ou fournir de fausses informations</li>
+          </ul>
 
-<h2>6. Modification</h2>
-<p>Les conditions peuvent être modifiées à tout moment.</p>
+          <h2>5. Contenus publiés par les utilisateurs</h2>
+          <p>
+            Les contenus, signalements et messages que vous soumettez dans l’application
+            restent sous votre responsabilité. Vous garantissez disposer des droits
+            nécessaires sur les contenus que vous publiez.
+          </p>
 
-<h2>7. Contact</h2>
-<p>Email : hello@lormont-connect.com</p>
+          <h2>6. Modération et suspension</h2>
+          <p>
+            Lormont Connect se réserve le droit de retirer tout contenu inapproprié,
+            contraire aux présentes conditions ou susceptible de nuire à la plateforme,
+            ainsi que de suspendre ou restreindre l’accès à un utilisateur en cas d’abus.
+          </p>
 
+          <h2>7. Disponibilité du service</h2>
+          <p>
+            Nous faisons notre possible pour assurer l’accessibilité et le bon
+            fonctionnement de l’application. Toutefois, nous ne garantissons pas un
+            accès continu, exempt d’erreurs ou d’interruptions.
+          </p>
+
+          <h2>8. Limitation de responsabilité</h2>
+          <p>
+            Les informations fournies dans l’application le sont à titre informatif.
+            Lormont Connect ne saurait être tenu responsable des décisions prises sur la
+            base des contenus affichés, signalés ou partagés dans l’application.
+          </p>
+
+          <h2>9. Protection des données</h2>
+          <p>
+            L’utilisation de l’application implique le traitement de certaines données
+            personnelles. Pour en savoir plus, veuillez consulter notre
+            <a href="privacy-policy.html">Politique de confidentialité</a>.
+          </p>
+
+          <h2>10. Modification des conditions</h2>
+          <p>
+            Nous pouvons mettre à jour les présentes conditions d’utilisation à tout
+            moment. La version la plus récente publiée sur cette page fait foi.
+          </p>
+
+          <h2>11. Contact</h2>
+          <p>
+            Pour toute question relative aux présentes conditions d’utilisation, vous
+            pouvez nous contacter à l’adresse suivante :
+            <a href="mailto:enock@wfpi.fr">enock@wfpi.fr</a>
+          </p>
+
+        </section>
+
+        <div class="footer">
+          Lormont Connect — Conditions d’utilisation
+        </div>
+
+      </div>
+    </div>
+  </div>
 </body>
 </html>
