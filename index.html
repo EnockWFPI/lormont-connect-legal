@@ -5,60 +5,196 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lormont Connect</title>
   <style>
+    :root {
+      --bg: #f4f7f5;
+      --card: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --primary: #15803d;
+      --primary-dark: #166534;
+      --border: #e5e7eb;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+      --radius: 18px;
+      --max-width: 920px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 40px 20px;
-      background: #f7f7f7;
-      color: #111;
-      line-height: 1.6;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(180deg, #eef7f0 0%, var(--bg) 100%);
+      color: var(--text);
+      line-height: 1.7;
     }
+
+    .wrapper {
+      min-height: 100vh;
+      padding: 40px 20px 60px;
+    }
+
     .container {
-      max-width: 800px;
+      max-width: var(--max-width);
       margin: 0 auto;
-      background: #fff;
-      padding: 40px 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
     }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .hero {
+      padding: 56px 32px 36px;
+      background: linear-gradient(135deg, #15803d 0%, #22c55e 100%);
+      color: #fff;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.16);
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
     h1 {
-      margin-top: 0;
-      font-size: 2rem;
+      margin: 0 0 14px;
+      font-size: 40px;
+      line-height: 1.15;
     }
-    p {
-      margin-bottom: 16px;
+
+    .hero p {
+      margin: 0;
+      max-width: 650px;
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.92);
     }
-    ul {
-      padding-left: 20px;
+
+    .content {
+      padding: 32px;
     }
-    a {
-      color: #0a7f3f;
+
+    .section-title {
+      margin: 0 0 10px;
+      font-size: 22px;
+    }
+
+    .section-text {
+      margin: 0 0 24px;
+      color: var(--muted);
+    }
+
+    .links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+
+    .link-card {
+      display: block;
       text-decoration: none;
+      color: inherit;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      background: #fff;
     }
-    a:hover {
-      text-decoration: underline;
+
+    .link-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+      border-color: #cbd5e1;
     }
+
+    .link-card h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+      color: var(--primary-dark);
+    }
+
+    .link-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
     .footer {
-      margin-top: 32px;
-      font-size: 0.95rem;
-      color: #555;
+      padding: 22px 32px 30px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 640px) {
+      .hero {
+        padding: 40px 22px 28px;
+      }
+
+      .content,
+      .footer {
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Lormont Connect</h1>
-    <p>Bienvenue sur la page officielle d’information de Lormont Connect.</p>
-    <p>Vous trouverez ci-dessous les liens utiles :</p>
+  <div class="wrapper">
+    <div class="container">
+      <div class="card">
+        <section class="hero">
+          <div class="badge">Lormont Connect</div>
+          <h1>Informations légales et support</h1>
+          <p>
+            Retrouvez ici les documents essentiels de Lormont Connect, notamment
+            notre politique de confidentialité, nos conditions d’utilisation et les
+            informations de support.
+          </p>
+        </section>
 
-    <ul>
-      <li><a href="privacy-policy.html">Politique de confidentialité</a></li>
-      <li><a href="terms-of-use.html">Conditions d’utilisation</a></li>
-      <li><a href="support.html">Support</a></li>
-    </ul>
+        <section class="content">
+          <h2 class="section-title">Liens utiles</h2>
+          <p class="section-text">
+            Ces pages sont mises à disposition pour informer les utilisateurs de
+            l’application et répondre aux exigences de publication sur l’App Store.
+          </p>
 
-    <div class="footer">
-      <p>Lormont Connect — Application communautaire et locale pour la ville de Lormont.</p>
+          <div class="links">
+            <a class="link-card" href="privacy-policy.html">
+              <h3>Politique de confidentialité</h3>
+              <p>Consultez la manière dont vos données sont collectées, utilisées et protégées.</p>
+            </a>
+
+            <a class="link-card" href="terms-of-use.html">
+              <h3>Conditions d’utilisation</h3>
+              <p>Découvrez les règles encadrant l’utilisation de l’application Lormont Connect.</p>
+            </a>
+
+            <a class="link-card" href="support.html">
+              <h3>Support</h3>
+              <p>Besoin d’aide ou d’informations supplémentaires ? Contactez notre support.</p>
+            </a>
+          </div>
+        </section>
+
+        <div class="footer">
+          Lormont Connect — Application locale et communautaire dédiée à la ville de Lormont.
+        </div>
+      </div>
     </div>
   </div>
 </body>
