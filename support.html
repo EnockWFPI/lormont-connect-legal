@@ -1,28 +1,217 @@
 <!DOCTYPE html>
-
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<title>Support — Lormont Connect</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support | Lormont Connect</title>
+
+  <style>
+    :root {
+      --bg: #f4f7f5;
+      --card: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --primary: #15803d;
+      --primary-dark: #166534;
+      --border: #e5e7eb;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+      --radius: 18px;
+      --max-width: 920px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(180deg, #eef7f0 0%, var(--bg) 100%);
+      color: var(--text);
+      line-height: 1.75;
+    }
+
+    .wrapper {
+      min-height: 100vh;
+      padding: 40px 20px 60px;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .hero {
+      padding: 48px 32px 32px;
+      background: linear-gradient(135deg, #15803d 0%, #22c55e 100%);
+      color: #fff;
+    }
+
+    .top-link {
+      display: inline-block;
+      margin-bottom: 16px;
+      color: rgba(255,255,255,0.92);
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .top-link:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 36px;
+      line-height: 1.15;
+    }
+
+    .subtitle {
+      margin: 0;
+      font-size: 16px;
+      color: rgba(255,255,255,0.92);
+    }
+
+    .content {
+      padding: 32px;
+    }
+
+    h2 {
+      margin: 28px 0 10px;
+      font-size: 22px;
+      color: var(--primary-dark);
+    }
+
+    h2:first-of-type {
+      margin-top: 0;
+    }
+
+    p {
+      margin: 0 0 16px;
+    }
+
+    ul {
+      margin: 0 0 18px;
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .highlight {
+      padding: 18px 20px;
+      border: 1px solid #dcfce7;
+      background: #f0fdf4;
+      border-radius: 14px;
+      margin-bottom: 28px;
+    }
+
+    .contact-box {
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: #fafafa;
+      margin: 18px 0 28px;
+    }
+
+    .footer {
+      padding: 24px 32px 30px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    a {
+      color: var(--primary-dark);
+    }
+
+    @media (max-width: 640px) {
+      .hero {
+        padding: 38px 22px 26px;
+      }
+
+      .content,
+      .footer {
+        padding-left: 22px;
+        padding-right: 22px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+    }
+  </style>
 </head>
+
 <body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="card">
 
-<h1>Support Lormont Connect</h1>
+        <section class="hero">
+          <a class="top-link" href="index.html">← Retour à l’accueil</a>
+          <h1>Support</h1>
+          <p class="subtitle">Besoin d’aide ? Nous sommes disponibles pour vous accompagner.</p>
+        </section>
 
-<p>Besoin d’aide ? Contactez-nous.</p>
+        <section class="content">
 
-<h2>Email</h2>
-<p>hello@lormont-connect.com</p>
+          <div class="highlight">
+            Cette page regroupe les informations essentielles pour contacter le support
+            de Lormont Connect et obtenir de l’aide concernant l’application.
+          </div>
 
-<h2>Problèmes techniques</h2>
-<p>Si vous rencontrez un bug ou un problème, merci de nous envoyer :</p>
-<ul>
-<li>Une description du problème</li>
-<li>Des captures d’écran (si possible)</li>
-</ul>
+          <h2>Nous contacter</h2>
+          <p>
+            Pour toute question, demande d’assistance ou signalement lié à l’application,
+            vous pouvez nous écrire à l’adresse ci-dessous.
+          </p>
 
-<h2>Délais</h2>
-<p>Nous répondons généralement sous 48 heures.</p>
+          <div class="contact-box">
+            <strong>Email :</strong>
+            <a href="mailto:enock@wfpi.fr">enock@wfpi.fr</a>
+          </div>
 
+          <h2>Assistance disponible</h2>
+          <p>Nous pouvons vous aider concernant les sujets suivants :</p>
+          <ul>
+            <li>Création ou accès à votre compte</li>
+            <li>Problèmes d’affichage ou de navigation dans l’application</li>
+            <li>Questions liées aux alertes locales et aux signalements</li>
+            <li>Fonctionnement de la carte et des sections communautaires</li>
+            <li>Questions relatives à la confidentialité et à l’utilisation de vos données</li>
+          </ul>
+
+          <h2>Délai de réponse</h2>
+          <p>
+            Nous faisons de notre mieux pour répondre aux demandes dans un délai de
+            24 à 48 heures ouvrées.
+          </p>
+
+          <h2>Informations utiles</h2>
+          <p>
+            Pour en savoir plus sur l’utilisation de l’application et le traitement de
+            vos données, vous pouvez également consulter nos
+            <a href="terms-of-use.html">Conditions d’utilisation</a> et notre
+            <a href="privacy-policy.html">Politique de confidentialité</a>.
+          </p>
+
+        </section>
+
+        <div class="footer">
+          Lormont Connect — Support
+        </div>
+
+      </div>
+    </div>
+  </div>
 </body>
 </html>
